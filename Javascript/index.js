@@ -1,16 +1,11 @@
-// Arithmetic Operator
- let film=100;
- film+=1;
- film-=1;
- film*=2;
- film/=2;
- film++;
- film--;
- let exp=film**3;
- console.log(exp);
- /* Operator Precedence
- 1. Paranthesis()
- 2. Exponents
- 3. Multiplication, Division , Modulo
- 4. Addition and Subtraction
- */
+// To Accept User Name
+// Use Window prompt or professional html textbox
+//1.
+// let username =window.prompt("What's your username?");
+// console.log(username);
+//2.
+let n;
+document.getElementById("MyButton").onclick=function(){
+    n=document.getElementById("user").value;
+    document.getElementById("h11").textContent="Welcome "+n+"!";
+};
