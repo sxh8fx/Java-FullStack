@@ -1,19 +1,24 @@
-let decrease=document.getElementById("decrease");
-let increase=document.getElementById("increase");
-let reset=document.getElementById("reset");
-let l=document.getElementById("l");
-let count=0;
+const checkBox=document.getElementById("checkBox");
+const UPI=document.getElementById("UPI");
+const creditCard=document.getElementById("creditCard");
+const debitCard=document.getElementById("debitCard");
+const submit=document.getElementById("submit");
+const subs=document.getElementById("subs");
+const pay=document.getElementById("pay");
 
-decrease.onclick=function(){
-    count--;
-    document.getElementById("l").textContent=count;
+submit.onclick = function(){
+    if(checkBox.checked){
+        subs.textContent="You are Subscribed";
+    }
+    else{
+        subs.textContent="You are NOT Subscribed";
+    }
+    if(UPI.checked)
+        pay.textContent="You are using UPI";
+    else if(creditCard.checked)
+        pay.textContent="You are using Credit Card";
+    else if(debitCard.checked)
+        pay.textContent="You are using Debit Card";
+    else
+        pay.textContent="You are Broke";
 }
-increase.onclick=function(){
-    count++;
-    document.getElementById("l").textContent=count;
-}
-reset.onclick=function(){
-    count=0;
-    document.getElementById("l").textContent=count;
-}
-

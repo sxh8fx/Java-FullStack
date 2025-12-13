@@ -8,11 +8,17 @@
 </head>
 <body>
     <script src="index.js" defer></script>
-    <label id="l">0</label>
-    <div id="container">
-        <button id="decrease" class="buttons">Decrease</button>
-        <button id="reset" class="buttons">Reset</button>
-        <button id="increase" class="buttons">Increase</button>
-    </div>
+    <input type="checkbox" id="checkBox">
+    <label for="checkBox">Subscribe</label><br><br>
+
+    <input type="radio" id="UPI" name="Card">
+    <label for="UPI">UPI</label><br>
+    <input type="radio" id="creditCard" name="Card">
+    <label for="creditCard">Credit Card</label><br>
+    <input type="radio" id="debitCard" name="Card">
+    <label for="debitCard">Debit Card</label><br><br>
+    <button id="submit">Submit</button>
+    <p id="subs"></p>
+    <p id="pay"></p>
 </body>
 </html>
