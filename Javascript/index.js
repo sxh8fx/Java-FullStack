@@ -1,19 +1,9 @@
-// Type Conversion
-// let age=window.prompt("What is your age?");
-// age+=1;
-// console.log(age); // Input is taken as String
+const PI=3.14159;
 
-let x="Kids";
-let y="Kids";
-let z="Kids";
-x=Number(x);
-y=String(y);
-z=Boolean(z);
 
-console.log(x, typeof x); 
-console.log(y, typeof y);
-console.log(z, typeof z);
-
-// NaN 'number'
-// Kids string
-// true 'boolean'
+document.getElementById("MyButton").onclick=function(){
+    let t=document.getElementById("ra").value;
+    t=Number(t);
+    let a=PI*t*t;
+    document.getElementById("h11").textContent="Area of Circle is: "+a;
+}
