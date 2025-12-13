@@ -3,79 +3,93 @@
     white-space: normal;
     overflow-wrap: break-word;
 }
+
 /*ID Selector*/
-#tit{
+#tit {
     font-family: sans-serif;
     font-weight: bold;
     font-size: 40px;
     color: white;
 }
-#jun{
- border: 3px solid aquamarine;
+
+#jun {
+    border: 3px solid aquamarine;
 }
-.fu{
+
+.fu {
     border-bottom: 3px solid yellow;
     border-left: 3px solid orangered;
     border-right: 3px solid rgb(255, 0, 200);
     border-top: 3px solid green;
-    border-radius:20px;
+    border-radius: 20px;
     padding: 5px 10px;
     display: inline-block;
 
 }
-h2{
+
+h2 {
     text-shadow: 3px 3px 5px grey;
 }
-#eye{
+
+#eye {
     height: 100px;
 }
-#wide{
+
+#wide {
     height: 100px;
 }
-#shut{
-    width:100px;
+
+#shut {
+    width: 100px;
 
 }
-.box{
+
+.box {
     display: inline-block;
     border: 5px solid;
-    padding:0;
+    padding: 0;
     font-size: 5em;
     margin: 10px;
 }
-.f{
+
+.f {
     background-color: rgb(119, 205, 255);
-    border: 2px solid rgb(4, 0, 255) ;
+    border: 2px solid rgb(4, 0, 255);
     padding: 10px;
     border-radius: 20px;
 }
+
 .f h2 {
     margin-top: 0;
 }
+
 .f input,
 .f select,
 .f textarea {
-    background-color: #d8f1ff;   
+    background-color: #d8f1ff;
     border: 1px solid #888;
     padding: 6px;
     border-radius: 4px;
 }
-footer{
-    padding:10px;
+
+footer {
+    padding: 10px;
 
 }
+
 /*Float*/
-#i{
-    height:300px;
-    float:left;
-    padding:10px;
+#i {
+    height: 300px;
+    float: left;
+    padding: 10px;
 }
+
 /* #pos{
     height: 200px;
     position:fixed;
 } */
-body{
-  /*  background-image: url(608855.jpg);*/
+body {
+    /*  background-image: url(608855.jpg);*/
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -83,16 +97,23 @@ body{
     color: white;
     background-color: black;
 }
-.s a:link{
-    color:lightblue;
+
+.s a:link {
+    color: lightblue;
 }
-.s a:hover{
+
+.s a:hover {
     color: red;
     font-size: larger;
 }
-.s a:active{
-    color:teal;
+
+.s a:active {
+    color: teal;
 }
-.s a:visited{
-    color:green;
+
+.s a:visited {
+    color: green;
+}
+h1::first-letter{
+    font-size: 2em;
 }
